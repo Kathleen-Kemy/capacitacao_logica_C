@@ -10,9 +10,11 @@
     considerando quais tipos de dados são adequados.
 */
 int main() { 
-    int idade = 21;
-    float peso = 64.3;
-    char nome = "Gabriel";
+    int idade = 19;
+    float peso = 41.99;
+    char nome[50]= "Kemy :D";
+
+    printf ("%d  %.2f  %s", idade, peso, nome);
     
     return 0;
 }

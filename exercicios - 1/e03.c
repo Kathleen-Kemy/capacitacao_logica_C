@@ -9,18 +9,18 @@
 int main() {
     float A = 4 / 7;
     float B = 3 / 5;
-    int result;
+    int resultado;
 
     if(A > B){
-        result = A;
+        resultado = A;
     }else{
-        result = B;
+        resultado = B;
     }
 
-    if (result == 0) {
-        printf("O resultado está correto, muito bem!!\n");
+    if (resultado == 0) {
+        printf("O resultado esta correto, muito bem!!\n");
     } else {
-        printf("O resultado está incorreto, verifique seu código!\n");
+        printf("O resultado esta incorreto, verifique seu codigo!\n");
     }
 
     return 0;

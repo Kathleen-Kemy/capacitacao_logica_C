@@ -1,22 +1,27 @@
 /*
-    Complemente o c√≥digo abaixo de modo que:
-    - some as vari√°veis A e B e salve o resultado na vari√°vel C
-    - em seguida, multiplique C por D e salve o resultado na vari√°vel E
-    ao final, execute o programa, que exibir√° o resultado de E e
-    e te informar√° se o valor obtido est√° correto
+    Complemente o cÛdigo abaixo de modo que:
+    - some as vari·veis A e B e salve o resultado na vari·vel C
+    - em seguida, multiplique C por D e salve o resultado na vari·vel E
+    ao final, execute o programa, que exibir· o resultado de E e
+    e te informar· se o valor obtido est· correto
 */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+//#include <windows.h>
 
-int main() {
-    int A = 5, B = 20, C = 0;
+int main(void) 
+{
+    setlocale (LC_ALL, "");
+    int A = 5, B = 2, C = 0;
     float D = 2.2, E = 0;
 
     C = A + B;
     E = C * D;
 
-    if (E == 55.0) printf("Parab√©ns! O valor de E √© %.2f e est√° correto!\n", E);
-    else printf("O valor de E √© %.2f e est√° incorreto! Tente novamente!\n", E);
+    if (E == 55.0) printf("ParabÈns! O valor de E È %.2f e est· correto!\n", E);
+    else printf("O valor de E È %.2f e est· incorreto! Tente novamente!\n", E);
     
     return 0;
 }
