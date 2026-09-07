@@ -11,11 +11,11 @@
 #include <stdio.h>
 
 int main(){
-    float A = 2.37, B = 3.12, C = 0;
+    float A = 2.71, B = 7.98, C = 0;
 
     C = A * B;
 
     // validação
-    printf("Valor de C para checagem: %f", C);
+    printf("Valor de C: %f", C);
     return 0;
 }

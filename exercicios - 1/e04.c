@@ -5,13 +5,14 @@
 
 #include <stdio.h>
 
-int main() {
-    char let1 = 'G', let2 = 'B', let3 = 'O';
+int main()
+{
+    char letra1 = 'K', letra2 = 'A', letra3 = 'T';
 
     // Substitua ??? pelo nomes de cada variável criada para exibi-las
-    printf("1º caracter: %c \n", let1 );
-    printf("2º caracter: %c \n", let2 );
-    printf("3º caracter: %c \n", let3 );
+    printf("primeira letra: %2c \n", letra1 );
+    printf("segunda letra: %3c \n", letra2);
+    printf("terceira letra: %2c \n", letra3);
 
     return 0;
 }

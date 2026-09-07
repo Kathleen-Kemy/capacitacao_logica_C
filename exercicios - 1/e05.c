@@ -7,13 +7,13 @@
 #include <stdio.h>
 
 int main() {
-    int a = 0;
+    int a = 10;
     int b = 1;
 
-    a = (a != b);
+    a = (a != b); //aq a vira a resposta para a pergunta: "a é diferente de b?", se for, é 1 :D
 
-    if ( a == 1 ) printf("O valor de a é 1, muito bem!!\n");
-    else printf("O valor de a é %d, verifique seu código!\n", a);
+    if (a == 1) printf("O valor de a eh 1, muito bem!\n");
+    else printf("O valor de a eh %d, verifique seu codigo!\n", a);
 
     return 0;
 }

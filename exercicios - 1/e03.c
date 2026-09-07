@@ -5,23 +5,28 @@
 */
 
 #include <stdio.h>
+#include <string.h>
 
-int main() {
-    float A = 4 / 7;
-    float B = 3 / 5;
-    int resultado;
+int main()
+{
+    float A = 7/7;
+    float B = 5/5;
+    char resultado[100];
 
-    if(A > B){
-        resultado = A;
-    }else{
-        resultado = B;
+    if(A > B)
+    {
+        strcpy(resultado, "A eh maior que B");
+    }
+    else if(B > A)
+    {
+        strcpy(resultado, "B eh maior que A");
+    }
+    else
+    {
+        strcpy (resultado, "Os dois sao iguaiss :)");
     }
 
-    if (resultado == 0) {
-        printf("O resultado esta correto, muito bem!!\n");
-    } else {
-        printf("O resultado esta incorreto, verifique seu codigo!\n");
-    }
+    printf ("%s", resultado);
 
     return 0;
 }
