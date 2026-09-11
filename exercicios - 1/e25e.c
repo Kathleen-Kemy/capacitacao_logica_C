@@ -11,26 +11,31 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int numeros[] = {3, 7, 12, 25, 30};
     int tamanho = 5;
-    int alvo;
+    int alvo, i;
     int encontrado = 0;
 
-    printf("Digite um número: ");
+    printf("Digite um numero: ");
     scanf("%d", &alvo);
 
-    for(int i = 0; i < tamanho;){
-        if(numeros[i] == alvo){
-            printf("Número presente.\n");
+    for (i = 0; (i < tamanho); i++)
+    {
+        if(numeros[i] == alvo)
+        {
+            printf("Numero presente!\n");
             encontrado = 1;
             break;
-        }else{
-            i++;
         }
+        
     }
-
-    if(encontrado == 0) printf("Número ausente.\n");
+    
+    if (encontrado == 0)
+    {
+        printf("Numero ausente!\n");
+    }
 
     return 0;
 }

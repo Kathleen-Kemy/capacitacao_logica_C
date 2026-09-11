@@ -4,13 +4,16 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int i = 0, pares = 0;
 
-    printf("Os 10 primeiros números pares são:\n");
+    printf("Os 10 primeiros numeros pares:\n");
     
-    while(pares < 10){
-        if(i % 2 == 0){
+    while(pares < 10)
+    {
+        if(i % 2 == 0)
+        {
             printf("%d\n", i);
             pares++;
         }

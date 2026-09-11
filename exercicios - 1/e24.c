@@ -11,22 +11,27 @@
 */
 #include <stdio.h>
 
-int fatorial(int n) {
+int fatorial(int n)
+{
     if (n <= 1) return 1;
     return n * fatorial(n - 1);
 }
 
-int main() {
+int main()
+{
     int N = 0, K = 3;
     int Comb;
 
-    do{
-        printf("Digite um número inteiro positivo N: ");
+    do
+    {
+        printf("Digite um numero inteiro positivo N: ");
         scanf("%d", &N);
 
-        if (N <= K) {
-            printf("N deve ser maior que %d.\n", K);
+        if (N <= K)
+        {
+            printf("N deve ser maior que %d :<.\n", K);
         }
+
     } while (N <= K);
     
     Comb = fatorial(N);
