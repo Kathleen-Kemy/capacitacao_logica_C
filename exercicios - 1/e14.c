@@ -5,15 +5,16 @@
 
 #include <stdio.h>
 
-int main() {
-    float fahrenheit, celsius;
+int main()
+{
+    float fah, cel;
 
     printf("Digite a temperatura em Fahrenheit: ");
-    scanf("%f", &fahrenheit);
+    scanf("%f", &fah);
 
-    celsius = (fahrenheit - 32) * 5 / 9;
+    cel = (fah - 32) * 5 / 9;
 
-    printf("Temperatura em Celsius: %.2f°C\n", celsius);
+    printf("Temperatura em Celsius: %.2f C\n", cel);
 
     return 0;
 }

@@ -10,12 +10,12 @@
 
 int main() {
     int numero, resultado;
-    printf("Digite um número inteiro: ");
+    printf("Digite um numero inteiro: ");
     scanf("%d", &numero);
 
-    resultado = numero * (numero + 1);
+    resultado = numero * (numero+1);
 
-    printf("Numero multiplicado pelo sucessor: %d\n", resultado);
+    printf("Resultado (num multiplicado pelo suscessor): %d\n", resultado);
 
     return 0;
 }

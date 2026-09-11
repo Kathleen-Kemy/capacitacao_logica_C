@@ -15,24 +15,26 @@
 
 #include <stdio.h>
 
-int main(){
+int main()
+{
     char opcao;
 
-    printf("Digite uma opção:\n");
+    printf("Digite uma letra maiuscula (A, M ou N): ");
     scanf("%c", &opcao);
 
-    switch(opcao){
+    switch (opcao)
+    {
         case 'A':
-            printf("Você escolheu Albert Einstein.\n");
+            printf("Voce escolheu Albert Einstein.\n");
             break;
         case 'M':
-            printf("Você escolheu Marie Curie.\n");
+            printf("Voce escolheu Marie Curie.\n");
             break;
         case 'N':
-            printf("Você escolheu Nikola Tesla.\n");
+            printf("Voce escolheu Nikola Tesla.\n");
             break;
         default:
-            printf("Opção inválida.\n");
+            printf("Opcao invalida :(\n");
             break;
     }
 

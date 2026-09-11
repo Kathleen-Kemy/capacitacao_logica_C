@@ -17,17 +17,18 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int anos, meses, dias, totalDias;
     float totalSemanas;
     
     printf("Digite a quantidade de anos, meses e dias, respectivamente: ");
     scanf("%d %d %d", &anos, &meses, &dias);
 
-    totalDias = (anos * 365) + (meses * 30) + (dias);
+    totalDias = (anos * 365) + (meses * 30) + dias;
     totalSemanas = totalDias / 7;
 
-    printf("Já se passaram %.2f semanas e %d dias.\n", totalSemanas, totalDias);
+    printf("Ja se passaram %.2f semanas, equivalente a %d dias!\n", totalSemanas, totalDias);
 
     return 0;
 }

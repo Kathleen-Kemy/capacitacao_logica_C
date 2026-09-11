@@ -7,16 +7,24 @@
 */
 #include <stdio.h>
 
-int main(){
+int main()
+{
     
-    int numero;
-    printf("Digite um número: ");
-    scanf("%d", &numero);
+    int num;
+    printf("Digite um numero: ");
+    scanf("%d", &num);
 
-    if(numero >= 0){
-        printf("O número digitado é positivo.\n");
-    }else{
-        printf("O número digitado é negativo.\n");
+    if(num > 0)
+    {
+        printf("O numero digitado eh positivo.\n");
+    }
+    else if (num < 0)
+    {
+        printf("O numero digitado eh negativo.\n");
+    }
+    else
+    {
+        printf ("O numero zero eh nulo!\n");
     }
 
     return 0;
