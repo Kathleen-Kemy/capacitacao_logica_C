@@ -14,17 +14,17 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     int D;
 
-    printf("Digite um número inteiro: ");
+    printf("Oii! Digite um numero inteiro: ");
     scanf("%d", &D);
 
-    // Substitua ??? por uma comparação que verifique se o número é par ou ímpar
-    if ( D % 2 == 0 ) {
-        printf("O número %d é PAR.\n", D);
+    if (D % 2 == 0) {
+        printf("O numero %d eh PAR.\n", D);
     } else {
-        printf("O número %d é ÍMPAR.\n", D);
+        printf("O numero %d eh IMPAR.\n", D);
     }
 
     return 0;
