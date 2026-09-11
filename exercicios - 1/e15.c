@@ -8,17 +8,18 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     float base, altura, area;
 
-    printf("Digite a base e altura do triângulo, respectivamente: ");
+    printf("Digite a base e a altura do triagulo: ");
     scanf("%f %f", &base, &altura);
 
-    area = base * altura;
+    area = (base * altura)/2;
 
-    printf("A área do triangulo é: %.1f\n", area);
+    printf("Area do triangulo: %.1f\n", area);
 
-    (area > 30) ? printf("A área é maior do que 30.\n") : printf("A área não é maior do que 30.\n");
+    (area > 30) ? printf("Eh um triangulo graande.\n") : printf("Eh um triangulo pequenino.\n");
 
     return 0;
 }

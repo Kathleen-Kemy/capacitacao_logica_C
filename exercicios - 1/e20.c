@@ -16,25 +16,34 @@
 #include <time.h>
 #include <ctype.h>
 
-int main() {
+int main()
+{
     int secreto, palpite, tentativas = 0;
 
     srand(time(NULL));
     secreto = rand() % 50 + 1;
 
-    do {
-        printf("Palpite um número (de 1-50): ");
+    do
+    {
+        printf("Palpite um numero (de 1 a 50): ");
         scanf("%d", &palpite);
         tentativas++;
 
-        if(palpite == secreto){
-            printf("Parabéns, você acertou com %d tentativas!\n", tentativas);
-        }else if (palpite < secreto) {
-            if (palpite < (secreto - 10)) {
+        if(palpite == secreto)
+        {
+            printf("Parabens, voce acertou com %d tentativa(s)!\n", tentativas);
+        }
+        else if (palpite < secreto)
+        {
+            if (palpite < (secreto - 10))
+            {
                 printf("Muito baixo!\n");
             }
-        } else {
-            if (palpite > (secreto + 10)) {
+        }
+        else
+        {
+            if (palpite > (secreto + 10))
+            {
                 printf("Muito alto!\n");
             }
         }

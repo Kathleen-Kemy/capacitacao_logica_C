@@ -7,14 +7,16 @@
 
 #include <stdio.h>
 
-int main() {
+int main()
+{
     // Inicialização do vetor
     int mao[5] = {1, 1, 1, 1, 1};
 
     mao[0] = 0;
     mao[4] = 0;
 
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++)
+    {
         if (mao[i] == 1){
             printf("Dedo %d: aberto\n", i + 1);
         } else {

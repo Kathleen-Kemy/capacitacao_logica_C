@@ -15,15 +15,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main() {
-    system("clear");
+int main()
+{
+    //system("clear");
     int num;
+    int multi = 0;
 
     printf("Digite um inteiro entre 1 e 10: ");
     scanf("%d", &num);
 
-    for(int i = 1; i <= 10; i++){
-        int multi = num * i;
+    for(int i = 0; i <= 10; i++)
+    {
+        multi = num * i;
 
         printf("%d x %d = %d\n", num, i, multi);
     }

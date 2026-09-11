@@ -9,26 +9,32 @@
 
 
 #include <stdio.h>
+#define qnt 10
 
-int main() {
-    int v[10];
+int main()
+{
+    int v[qnt];
     int soma = 0, i;
 
-    printf("Por favor, digite 10 inteiros:\n");
-    for (i = 0; i < 10; i++) {
-        printf("%dº valor: ", i + 1);
+    printf("Por favor, digite %d inteiros:\n", qnt);
+    for (i = 0; i < qnt; i++)
+    {
+        printf("Valor %d: ", i + 1);
         scanf("%d", &v[i]);
     }
 
-    printf("\nSeus números são:\n");
-    for (i = 0; i < 10; i++) {
+    printf("\nSeus numeros sao:\n");
+    for (i = 0; i < qnt; i++)
+    {
         printf("v[%d] = %d\n", i, v[i]);
     }
 
-    for (i = 0; i < 10; i++) {
+    for (i = 0; i < qnt; i++)
+    {
         soma += v[i];
     }
-    printf("A soma dos números é: %d\n", soma);
+
+    printf("A soma dos numeros: %d\n", soma);
 
     return 0;
 }
